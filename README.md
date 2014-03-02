@@ -1,6 +1,6 @@
 # Hashtel
 
-Get a consistent (pretty) hex color from your strings.
+Get a consistent (pretty) UIColor/NSColor from your strings.
 
 This allows you to show nice colors in your UI's that are consistent throughout your application.
 
