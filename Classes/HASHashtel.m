@@ -27,9 +27,9 @@
   NSInteger adaptedGreen = startColor + originalGreen - originalRed;
   NSInteger adaptedBlue = startColor + originalBlue - originalGreen;
 
-  return [HASColor colorWithRed:(float)adaptedRed / 255
-                          green:(float)adaptedGreen / 255
-                           blue:(float)adaptedBlue / 255
+  return [HASColor colorWithRed:(CGFloat)adaptedRed / 255
+                          green:(CGFloat)adaptedGreen / 255
+                           blue:(CGFloat)adaptedBlue / 255
                           alpha:1];
 }
 
