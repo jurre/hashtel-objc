@@ -18,28 +18,28 @@ describe(@"HASHashtel", ^{
             HASColor *color = [hashtel colorForString:@"foo"];
             CGFloat red = 0.0, green = 0.0, blue = 0.0, alpha = 0.0;
             [color getRed:&red green:&green blue:&blue alpha:&alpha];
-            [[@(red)should] beBetween:@(0) and:@(255)];
-            [[@(green)should] beBetween:@(0) and:@(255)];
-            [[@(blue)should] beBetween:@(0) and:@(255)];
-            [[@(alpha)should] equal:@(1)];
-		});
+            [[@(red) should] beBetween:@(0) and:@(255)];
+            [[@(green) should] beBetween:@(0) and:@(255)];
+            [[@(blue) should] beBetween:@(0) and:@(255)];
+            [[@(alpha) should] equal:@(1)];
+        });
 
         it(@"returns white for an empty string", ^{
             HASHashtel *hashtel = [[HASHashtel alloc] init];
             [[[hashtel colorForString:@""] should] equal:[HASColor whiteColor]];
-		});
+        });
 
         it(@"returns a valid color for single character string", ^{
             HASHashtel *hashtel = [[HASHashtel alloc] init];
             HASColor *color = [hashtel colorForString:@"a"];
             CGFloat red = 0.0, green = 0.0, blue = 0.0, alpha = 0.0;
             [color getRed:&red green:&green blue:&blue alpha:&alpha];
-            [[@(red)should] beBetween:@(0) and:@(255)];
-            [[@(green)should] beBetween:@(0) and:@(255)];
-            [[@(blue)should] beBetween:@(0) and:@(255)];
-            [[@(alpha)should] equal:@(1)];
-		});
-	});
+            [[@(red) should] beBetween:@(0) and:@(255)];
+            [[@(green) should] beBetween:@(0) and:@(255)];
+            [[@(blue) should] beBetween:@(0) and:@(255)];
+            [[@(alpha) should] equal:@(1)];
+        });
+    });
 });
 
 SPEC_END

@@ -11,8 +11,8 @@
 @implementation NSString (Hashtel)
 
 - (HASColor *)color {
-	HASHashtel *hashtel = [[HASHashtel alloc] init];
-	return [hashtel colorForString:self];
+  HASHashtel *hashtel = [[HASHashtel alloc] init];
+  return [hashtel colorForString:self];
 }
 
 @end
