@@ -1,4 +1,4 @@
-@version = "0.0.1"
+@version = "0.0.2"
 
 Pod::Spec.new do |s|
   s.name              = "Hashtel"
@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.source_files      = "Classes/**/*.{h,m}"
   s.requires_arc      = true
 
-  s.public_header_files = "Classes/NSString+Hashtel.h"
+  s.public_header_files = "Classes/*.h"
 
   s.ios.deployment_target   = "5.0"
   s.osx.deployment_target   = "10.8"
